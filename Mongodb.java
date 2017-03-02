@@ -18,7 +18,7 @@ public class Mongodb {
 	public static void mongodb() throws MongoException, IOException{
 
         //链接数据库
-        Mongo connection = new Mongo("192.168.235.20",27017); //url与端口
+        Mongo connection = new Mongo("127.0.0.1",27017); //url与端口
         DB db = connection.getDB("weiboUser");//数据库名字
         boolean ok = db.authenticate("root", "iiip".toCharArray());  //认证过程，用户名（String）和密码（char[]）
 
